@@ -46,10 +46,62 @@ npm start
 Start the client
 cd client
 npm start
-
-Notes
-
 Run npm install in both client and server before starting.
+
+
+Note:
+Node Modules for Chat Application
+1. Express
+
+Web framework to handle routes and server.
+
+npm install express
+
+2. Socket.IO
+
+For real-time, bi-directional communication (chat messages).
+
+npm install socket.io
+
+3. Nodemon (optional, for development)
+
+Automatically restarts the server when you make changes.
+
+npm install --save-dev nodemon
+
+4. dotenv (optional, for environment variables)
+
+To manage things like PORT or secrets.
+
+npm install dotenv
+
+5. CORS (if using frontend separately)
+
+Handles cross-origin requests.
+
+npm install cors
+
+
+✅ Your package.json dependencies will look like this:
+
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
 
 
 
