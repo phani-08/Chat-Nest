@@ -51,9 +51,8 @@ Notes
 
 Run npm install in both client and server before starting.
 
-node_modules is not uploaded to GitHub.
 
-Add your environment variables in a .env file.
+
 
 
 
